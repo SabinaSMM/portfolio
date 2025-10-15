@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кейс: Soulixir | Сабина Гамерова</title>
 
+
     <!-- Подключение шрифтов -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+
 
     <style>
         /* Back Button Navigation */
@@ -26,6 +29,7 @@ nav {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 
+
 .back-button {
     display: inline-flex;
     align-items: center;
@@ -41,6 +45,7 @@ nav {
     transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+
 .back-button:hover {
     background: rgba(255, 51, 102, 0.2);
     border-color: rgba(255, 51, 102, 0.5);
@@ -48,15 +53,18 @@ nav {
     box-shadow: 0 4px 16px rgba(255, 51, 102, 0.3);
 }
 
+
 .back-button svg {
     width: 20px;
     height: 20px;
     transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+
 .back-button:hover svg {
     transform: translateX(-3px);
 }
+
 
 /* Vertical Side Navigation */
 .side-nav {
@@ -70,6 +78,7 @@ nav {
     gap: 1.5rem;
 }
 
+
 .nav-dot {
     position: relative;
     width: 12px;
@@ -81,11 +90,13 @@ nav {
     transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+
 .nav-dot:hover {
     background: rgba(255, 51, 102, 0.6);
     border-color: rgba(255, 51, 102, 0.8);
     transform: scale(1.3);
 }
+
 
 .nav-dot.active {
     background: var(--primary);
@@ -93,6 +104,7 @@ nav {
     transform: scale(1.5);
     box-shadow: 0 0 20px rgba(255, 51, 102, 0.6);
 }
+
 
 .nav-dot .nav-label {
     position: absolute;
@@ -113,10 +125,12 @@ nav {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+
 .nav-dot:hover .nav-label {
     opacity: 1;
     left: 2.5rem;
 }
+
 
         @font-face {
             font-family: 'Etude Noire';
@@ -128,11 +142,13 @@ nav {
             font-display: swap;
         }
 
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
 
         :root {
             --primary: #FF3366;
@@ -141,9 +157,11 @@ nav {
             --accent: #FFD400;
             --gray: #333333;
 
+
             --font-heading: 'Etude Noire', sans-serif;
             --font-body: 'Tenor Sans', sans-serif;
         }
+
 
         body {
             font-family: var(--font-body);
@@ -152,6 +170,7 @@ nav {
             line-height: 1.6;
             overflow-x: hidden;
         }
+
 
         /* Навигация */
         nav {
@@ -168,11 +187,13 @@ nav {
             transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
+
         nav:hover {
             background: rgba(10, 10, 10, 0.8);
             backdrop-filter: blur(50px) saturate(200%);
             -webkit-backdrop-filter: blur(50px) saturate(200%);
         }
+
 
         nav ul {
             display: flex;
@@ -181,6 +202,7 @@ nav {
             list-style: none;
             flex-wrap: wrap;
         }
+
 
         nav a {
             color: var(--white);
@@ -194,6 +216,7 @@ nav {
             border-radius: 12px;
         }
 
+
         nav a:hover {
             color: var(--primary);
             background: rgba(255, 51, 102, 0.1);
@@ -201,6 +224,7 @@ nav {
             -webkit-backdrop-filter: blur(10px);
             transform: translateY(-2px);
         }
+
 
         /* Секции */
         section {
@@ -212,10 +236,12 @@ nav {
             position: relative;
         }
 
+
         .container {
             max-width: 1200px;
             width: 100%;
         }
+
 
         /* Заголовок страницы */
         .page-title {
@@ -226,6 +252,7 @@ nav {
             color: var(--primary);
             text-align: center;
         }
+
 
         /* Фото с рамкой */
         .photo-container {
@@ -242,12 +269,14 @@ nav {
             transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
+
         .photo-container:hover {
             transform: translateY(-10px) scale(1.02);
             border-color: rgba(255, 212, 0, 0.5);
             box-shadow: 0 30px 80px rgba(255, 212, 0, 0.4),
                 inset 0 1px 0 rgba(255, 255, 255, 0.2);
         }
+
 
         .photo-container img {
             width: 100%;
@@ -257,6 +286,7 @@ nav {
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
         }
 
+
         /* Двухколоночная сетка */
         .two-column {
             display: grid;
@@ -265,11 +295,13 @@ nav {
             margin-bottom: 3rem;
         }
 
+
         .column {
             display: flex;
             flex-direction: column;
             gap: 1.5rem;
         }
+
 
         /* Заголовки разделов */
         .section-heading {
@@ -279,6 +311,7 @@ nav {
             margin-bottom: 1rem;
         }
 
+
         /* Текст */
         .text-content {
             font-size: 1.1rem;
@@ -286,24 +319,29 @@ nav {
             line-height: 1.8;
         }
 
+
         .text-yellow {
             color: var(--accent);
             font-weight: 700;
         }
 
+
         .text-white {
             color: var(--white);
         }
 
+
         .text-center {
             text-align: center;
         }
+
 
         /* Списки с анимацией */
         .animated-list {
             list-style: none;
             line-height: 2;
         }
+
 
         .animated-list li {
             color: var(--white);
@@ -313,10 +351,12 @@ nav {
             margin-bottom: 0.8rem;
         }
 
+
         .animated-list li:hover {
             color: rgba(255, 255, 255, 1);
             padding-left: 2rem;
         }
+
 
         .animated-list li::before {
             content: '▸';
@@ -326,6 +366,7 @@ nav {
             filter: drop-shadow(0 0 5px rgba(255, 212, 0, 0.3));
         }
 
+
         /* Разделитель */
         .divider {
             width: 100%;
@@ -333,6 +374,7 @@ nav {
             background: linear-gradient(90deg, transparent, var(--primary), transparent);
             margin: 4rem 0;
         }
+
 
         /* Кнопка CTA */
         .cta-button {
@@ -358,6 +400,7 @@ nav {
             max-width: 400px;
         }
 
+
         .cta-button::before {
             content: '';
             position: absolute;
@@ -373,14 +416,17 @@ nav {
             transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
+
         .cta-button:hover::before {
             left: 100%;
         }
+
 
         .cta-button span {
             position: relative;
             z-index: 1;
         }
+
 
         .cta-button:hover {
             transform: translateY(-3px) scale(1.02);
@@ -389,6 +435,7 @@ nav {
             box-shadow: 0 16px 48px rgba(255, 51, 102, 0.4),
                 inset 0 1px 0 rgba(255, 255, 255, 0.3);
         }
+
 
 /* Галерея изображений */
 .image-gallery {
@@ -400,6 +447,7 @@ nav {
     justify-content: flex-start;
 }
 
+
 .image-gallery-item img {
     width: auto;
     height: 450px;
@@ -408,19 +456,23 @@ nav {
     border-radius: 8px;
 }
 
+
         .image-gallery::-webkit-scrollbar {
             height: 8px;
         }
+
 
         .image-gallery::-webkit-scrollbar-track {
             background: rgba(51, 51, 51, 0.5);
             border-radius: 4px;
         }
 
+
         .image-gallery::-webkit-scrollbar-thumb {
             background: var(--primary);
             border-radius: 4px;
         }
+
 
         .image-gallery-item {
             flex-shrink: 0;
@@ -435,6 +487,7 @@ nav {
             transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
+
         .image-gallery-item:hover {
             transform: translateY(-5px) scale(1.05);
             border-color: rgba(255, 212, 0, 0.5);
@@ -442,12 +495,14 @@ nav {
                 inset 0 1px 0 rgba(255, 255, 255, 0.2);
         }
 
+
         .image-gallery-item img {
             width: auto;
             height: 450px;
             display: block;
             border-radius: 8px;
         }
+
 
         /* Галерея с стрелкой */
         .metrics-gallery {
@@ -459,12 +514,14 @@ nav {
             flex-wrap: wrap;
         }
 
+
         .arrow-icon {
             font-size: 3rem;
             color: var(--accent);
             filter: drop-shadow(0 0 10px rgba(255, 212, 0, 0.5));
             animation: pulse 2s ease-in-out infinite;
         }
+
 
         @keyframes pulse {
             0%, 100% {
@@ -477,6 +534,7 @@ nav {
             }
         }
 
+
         /* Ссылки на видео */
         .video-links {
             display: flex;
@@ -484,6 +542,7 @@ nav {
             gap: 1rem;
             margin: 2rem 0;
         }
+
 
         .video-link {
             display: inline-flex;
@@ -504,11 +563,13 @@ nav {
                 inset 0 1px 0 rgba(255, 255, 255, 0.1);
         }
 
+
         .video-link svg {
             flex-shrink: 0;
             color: #FF3366;
             transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
         }
+
 
         .video-link:hover {
             background: rgba(255, 51, 102, 0.3);
@@ -518,10 +579,12 @@ nav {
                 inset 0 1px 0 rgba(255, 255, 255, 0.2);
         }
 
+
         .video-link:hover svg {
             transform: scale(1.1);
             filter: drop-shadow(0 0 8px rgba(255, 51, 102, 0.6));
         }
+
 
         /* Блок с рамкой */
         .bordered-box {
@@ -537,6 +600,7 @@ nav {
             transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
+
         .bordered-box:hover {
             transform: translateY(-10px) scale(1.02);
             background: rgba(51, 51, 51, 0.7);
@@ -547,16 +611,13 @@ nav {
             -webkit-backdrop-filter: blur(40px) saturate(200%);
         }
 
+
         /* Адаптив */
         @media (max-width: 768px) {
-    .side-nav {
-        display: none;
-    }
-    
-    /* остальные существующие стили... */
-}
+            .side-nav {
+                display: none;
+            }
 
-        @media (max-width: 768px) {
             .two-column {
                 grid-template-columns: 1fr;
                 gap: 2rem;
@@ -573,9 +634,27 @@ nav {
             .arrow-icon {
                 font-size: 2rem;
             }
+
+            /* Вертикальное отображение метрик на мобильных */
+            #metrics-section .metrics-gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            /* Вертикальная стрелка для мобильных */
+            #metrics-section .arrow-icon {
+                transform: rotate(90deg);
+                margin: 1rem 0;
+            }
+
+            /* Специальный размер для второй пары метрик */
+            #metrics-section .metrics-gallery.small-metrics .image-gallery-item img {
+                height: 180px;
+            }
         }
     </style>
 </head>
+
 
 <body>
 <!-- Back Button Navigation -->
@@ -609,14 +688,17 @@ nav {
     </div>
 </div>
 
+
     <!-- Секция 1: Заголовок и фото -->
     <section id="project-section" style="background: linear-gradient(135deg, var(--black) 0%, #1a0a14 100%);">
         <div class="container">
             <h1 class="page-title">Soulixir</h1>
 
+
             <div class="photo-container">
     <img src="soulixir.PNG" alt="Soulixir">
             </div>
+
 
             <div class="two-column">
                 <!-- Левый столбец -->
@@ -627,6 +709,7 @@ nav {
                         <span class="text-yellow">идти заявки с соц.сетей.</span>
                     </p>
                 </div>
+
 
                 <!-- Правый столбец -->
                 <div class="column">
@@ -644,10 +727,12 @@ nav {
                         • Красивый бренд и стильная подача
                     </p>
 
+
                     <h2 class="section-heading">Задачи проекта</h2>
                     <p class="text-content">
                         Ведение соц.сетей - Instagram*, Телеграм, Threads*. Поднятие статистики и увеличение лидогенерация в социальных сетях.
                     </p>
+
 
                     <h2 class="section-heading">Результаты</h2>
                     <ul class="animated-list">
@@ -658,11 +743,14 @@ nav {
                 </div>
             </div>
 
+
             <a href="index.html#contact" class="cta-button"><span>Начать сотрудничество</span></a>
         </div>
     </section>
 
+
     <div class="divider"></div>
+
 
     <!-- Секция 2: Упаковка -->
     <section id="packaging-section" style="background: var(--gray);">
@@ -671,6 +759,7 @@ nav {
             <p class="text-content">
                 Разработана уникальная стилистика бренда в соц.сетях, дизайн обложек для актуальных stories, а так же визуал сетки в Instagram, которые передают ценности бренда: деликатность, доведение до результата, хороший настрой на принятие индивидуальных особенностей клиента, а также описание профиля, передающее ценность бренда.
             </p>
+
 
             <div class="image-gallery">
                 <div class="image-gallery-item">
@@ -689,17 +778,21 @@ nav {
         </div>
     </section>
 
+
     <div class="divider"></div>
+
 
     <!-- Секция 3: Контент -->
     <section id="content-section" style="background: var(--black);">
         <div class="container">
             <h2 class="page-title">Контент</h2>
 
+
             <!-- Stories -->
             <p class="text-content">
                 Прописывалась продающая структура каждого сторителлинга, отражающая позиционирование бренда, а так же бьющая в боли ЦА. При прописании структуры, я использовала различные маркетинговые модели, для придания сторителлингу структурированности и привлекательности, для ЦА. Создавался визуал для stories, в соответствии с разработанной стилистикой бренда.
             </p>
+
 
             <div class="image-gallery">
                 <div class="image-gallery-item">
@@ -716,10 +809,12 @@ nav {
                 </div>
             </div>
 
+
             <!-- Посты -->
             <p class="text-content">
                 Прописывалась продающая структура каждого поста, отражающая позиционирование бренда, а так же бьющая в боли ЦА. При прописании структуры, я использовала различные маркетинговые модели, для придания посту структурированности и привлекательности, для ЦА. Создавался визуал для постов, в соответствии с разработанной стилистикой бренда.
             </p>
+
 
             <div class="image-gallery">
                 <div class="image-gallery-item">
@@ -751,10 +846,12 @@ nav {
                 </div>
             </div>
 
+
             <!-- Reels -->
             <p class="text-content">
                 Прописывались сценарии с хуками и вовлекающими механиками для каждого Reels, отражающие позиционирование бренда, а так же бьющие в боли ЦА. При прописании сценариев, я использовала различные маркетинговые модели, для придания Reels структурированности и привлекательности, для ЦА. Создавался визуал для постов, в соответствии с разработанной стилистикой бренда.
             </p>
+
 
             <div class="video-links">
                 <a href="https://drive.google.com/file/d/1xn25bO08qoTRjzYpd7jSlYrpgfdk8IhQ/view?usp=sharing" target="_blank" class="video-link">
@@ -765,7 +862,9 @@ nav {
         </div>
     </section>
 
+
     <div class="divider"></div>
+
 
 <!-- Секция 4: Метрики -->
 <section id="metrics-section" style="background: var(--gray);">
@@ -778,6 +877,7 @@ nav {
             Telegram: вовлечённость <span class="text-yellow" style="font-weight: 700;">7% ➜ 46%</span>.
         </p>
 
+
         <div class="metrics-gallery">
             <div class="image-gallery-item">
                 <img src="metricsbud1.PNG" alt="Метрики 1">
@@ -788,16 +888,17 @@ nav {
             </div>
         </div>
 
-        <div class="metrics-gallery">
+
+        <div class="metrics-gallery small-metrics">
             <div class="image-gallery-item">
-    <img src="metricsbud3.PNG" alt="Метрики 3">
+                <img src="metricsbud3.PNG" alt="Метрики 3">
             </div>
             <div class="arrow-icon">→</div>
-<div class="image-gallery-item">
-    <img src="metricsbud4.PNG" alt="Метрики 4">
-</div>
-
+            <div class="image-gallery-item">
+                <img src="metricsbud4.PNG" alt="Метрики 4">
+            </div>
         </div>
+
 
         <div class="image-gallery" style="justify-content: center;">
             <div class="image-gallery-item">
@@ -813,7 +914,9 @@ nav {
     </div>
 </section>
 
+
     <div class="divider"></div>
+
 
 <!-- Секция 5: Результаты -->
 <section id="results-section" style="background: var(--black);">
@@ -825,13 +928,16 @@ nav {
             </p>
         </div>
 
+
         <div class="photo-container">
             <img src="resultbud.PNG" alt="Результаты">
         </div>
     </div>
 </section>
 
+
     <div class="divider"></div>
+
 
        <!-- Секция 6: Разбор в подарок -->
     <section id="contact" style="background: linear-gradient(135deg, #1a0a14 0%, var(--black) 100%);">
@@ -857,6 +963,7 @@ nav {
             }
         }
 
+
         // Smooth scroll indicator
         window.addEventListener('scroll', () => {
             const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -871,6 +978,7 @@ nav {
 const sections = document.querySelectorAll('section[id]');
 const navDots = document.querySelectorAll('.nav-dot');
 
+
 function updateActiveNav() {
     let currentSection = '';
     
@@ -882,6 +990,7 @@ function updateActiveNav() {
         }
     });
 
+
     navDots.forEach(dot => {
         dot.classList.remove('active');
         if (dot.getAttribute('data-section') === currentSection) {
@@ -890,7 +999,9 @@ function updateActiveNav() {
     });
 }
 
+
 window.addEventListener('scroll', updateActiveNav);
+
 
 // Side navigation click handlers
 navDots.forEach(dot => {
@@ -903,10 +1014,13 @@ navDots.forEach(dot => {
     });
 });
 
+
 // Initialize on load
 updateActiveNav();
 
+
     </script>
 </body>
+
 
 </html>
