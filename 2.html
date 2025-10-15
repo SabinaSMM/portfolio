@@ -546,35 +546,34 @@ nav {
             -webkit-backdrop-filter: blur(40px) saturate(200%);
         }
 
-        /* Адаптив */
-        @media (max-width: 768px) {
+   /* Адаптив */
+@media (max-width: 768px) {
     .side-nav {
         display: none;
     }
     
+    .two-column {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    section {
+        padding: 5rem 5%;
+    }
+
     .image-gallery-item img {
-        height: 300px;
+        height: 250px;
+    }
+
+    /* Специальный размер для фото в разделе Метрики */
+    #metrics-section .image-gallery-item img {
+        height: 200px;
+    }
+
+    .arrow-icon {
+        font-size: 2rem;
     }
 }
-
-        @media (max-width: 768px) {
-            .two-column {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            section {
-                padding: 5rem 5%;
-            }
-
-            .image-gallery-item img {
-                height: 250px;
-            }
-
-            .arrow-icon {
-                font-size: 2rem;
-            }
-        }
     </style>
 </head>
 
